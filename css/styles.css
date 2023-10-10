@@ -1,0 +1,466 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+@media only screen and (min-width: 601px) {
+    .mobile {
+        display: none;
+    }
+
+    /* HEADER AND NAV BAR FOR DESKTOP */
+    header {
+        background-color: #f8f8f8;
+        width: 100%;
+        height: 64px;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin: 0 24px;
+        font-size: 20px;
+        text-transform: uppercase;
+        height: 64px;
+    }
+
+    .colmar {
+        font-weight: 600;
+    }
+
+    .academy {
+        font-weight: 300;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 24px;
+    }
+
+    nav li {
+        margin-left: 16px;
+        font-size: 16px;
+    }
+
+    nav ul {
+        list-style: none;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #1f1f1f;
+        line-height: 16px;
+    }
+
+    a:hover {
+        color: #ffa500;
+    }
+
+    /* MAIN FOR DESKTOP */
+    main {
+        padding-top: 64px;
+        width: 100%;
+    }
+
+    /* TOP BANNER, TITLE AND BUTTON FOR DESKTOP */
+    .topbanner {
+        background-color: #d3d3d3;
+        display: flex;
+    }
+
+    .topbanner img {
+        width: 60%;
+        padding: 32px 24px;
+        display: flex;
+    }
+
+    .toptitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 30%;
+    }
+
+    .toptitle button {
+        background-color: #1f1f1f;
+        color: #ffffff;
+        padding: 8px 128px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .toptitle p {
+        margin: 24px 0;
+    }
+
+/* HIGHLIGHTS SECTION FOR DESKTOP */
+    .highlights{
+        display: flex;
+        width: 100%;
+        padding: 32px 24px;
+        background-color: #f8f8f8;
+        overflow: hidden;
+    }
+
+    .highlightsleft{
+        width: 60%;
+    }   
+
+    .highlightsleft img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .highlightsleft h2{
+        margin-top: 32px;
+    }
+
+    .highlightsleft p{
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    .highlightsright{
+        width: 40%;
+        padding-left: 24px;
+    }
+
+    .orientation, .ourcampus, .lecturer{
+        display: flex;
+    }
+
+    .orientation img, .ourcampus img, .lecturer img{
+        width: 35%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .orientation .date, .ourcampus .text, .lecturer .intro{
+        width: 65%;
+        padding-top: 48px;
+    }
+
+    .orientation .date p, .ourcampus .text p, .lecturer .intro p{
+        font-size: 14px;
+    }
+
+    .readmore a{
+        margin-top: 16px;
+        font-size: small;
+        color: #00f;
+    }
+
+    .readmore a:hover{
+        color: #ffa500;
+    }
+
+/* START LEARNING SECTION FOR DESKTOP */
+    .startlearning{
+        background-color: #d3d3d3;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+
+    .startlearning h2{
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    .learninglist{
+        display: flex;
+        list-style: none;
+        width: 80%;
+    }
+
+    .learninglist li{
+        width: 33%;   
+    }
+
+    .software, .computerart, .design, .data, .business, .marketing{
+        background-color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 24px;
+        margin-left: 32px;
+    }
+
+    .software img, .computerart img, .design img, .data img, .business img, .marketing img{
+        height: auto;
+        width: 100%;
+    }
+
+    .software h3, .computerart h3, .design h3, .data h3, .business h3, .marketing h3{
+        margin: 16px 16px;
+    }
+
+    .software p, .computerart p, .design p, .data p, .business p, .marketing p{
+        margin: 8px 16px;
+        font-size: 14px;
+    }
+
+/* THESIS SECTION FOR DESKTOP */
+    .exhibit{
+        background-color: #f8f8f8;
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }    
+  
+    .thesiscontainer{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .thesiscontainer .left{
+        width: 60%;
+        padding: 0 24px 24px 24px;
+    }
+
+    .thesiscontainer .left video{
+        width: 100%;
+    }
+
+    .thesiscontainer h3{
+        margin-top: 24px;
+    }
+
+    .thesiscontainer p{
+        margin-top: 8px;
+        margin-bottom: 32px;
+        font-size: 14px;
+    }
+
+    .thesiscontainer .right{
+        width: 40%;
+        padding: 35px 0px 24px 0px;
+    }
+
+    .thesiscontainer .right li{
+        list-style: none;
+        display: flex;
+    }
+
+    .thesiscontainer .right img{
+        width: 35%;
+        height: 35%;
+    }
+
+    .thesiscontainer .right .fisma{
+        background-color: #d3d3d3;
+        padding: 16px;
+    }
+
+    .thesiscontainer .right .fismatext h3{ 
+        padding: 0 16px;
+    }
+   
+    .thesiscontainer .right .fismatext p{
+        padding: 0 16px;
+        font-size: 14px;
+    }
+
+
+    .thesiscontainer .right .now img{
+        width: 30%;
+        height: 30%;
+        padding: 16px 16px;
+    }
+
+    .thesiscontainer .right .now h3{
+        padding: 32px 0 0 0;
+    }
+
+    .thesiscontainer .right .now p{
+        font-size: 14px;
+
+    }
+
+/* FOOTER SECTION FOR DESKTOP */
+    footer{
+        display: flex;
+        background-color: #d3d3d3;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;    
+    }
+
+    .copyright{
+     padding-left: 24px;
+     padding-bottom: 32px;
+     padding-top: 24px;
+    }
+
+    .copyright p{
+        font-size: 12px;
+       }
+
+    footer .terms li{
+        display: flex;
+        list-style: none;
+        padding-right: 24px;
+        float: right;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+/* HEADER FOR MOBILE */
+    header{
+        display: flex;
+        width: 100%;
+        height: 64px;
+        position: fixed;
+        background-color: #f8f8f8;
+        justify-content: space-around;
+        z-index: 100;
+    }
+
+    main {
+        padding-top: 64px;
+        width: 100%;
+    }
+
+/* NAV BAR FOR MOBILE */
+    .mobile_menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+/* TOP BANNER FOR MOBILE */
+    .mobile_top_banner{
+        width: 100%;
+        height: auto;
+        background-color: #d3d3d3;
+    }
+
+    .mobile_top_banner img{
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .mobile_top_banner_text{
+        text-align: center;
+        padding: 0 16px 32px 16px;
+    }
+
+    .mobile_top_banner_text h2{
+        padding-bottom: 32px;
+    }
+
+    .mobile_top_banner_text p{     
+        padding-bottom: 24px;
+        font-size: 16px;
+    }
+
+    .mobile_top_banner button{
+        background-color: #1f1f1f;
+        color: #f8f8f8;
+        box-sizing: content-box;
+        height: 24px;
+        width: 70%;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+/* HIGHLIGHT SECTION FOR MOBILE */
+    .mobile_orientation, .mobile_campus, .mobile_lecturer{
+        width: 100%;
+        height: auto;
+        background-color: #f8f8f8;
+    }
+
+    .mobile_orientation img, .mobile_campus img, .mobile_lecturer img{
+        width: 90%;
+        padding: 16px 16px 16px 16px;  
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile_orientation h3, .mobile_campus h3, .mobile_lecturer h3{
+        padding-left: 16px;
+        padding-bottom: 16px;
+    }
+    
+    .mobile_orientation p, .mobile_campus p, .mobile_lecturer p{
+        padding-left: 16px;
+        padding-bottom: 16px;
+        font-size: 14px;
+    }
+
+    .mobile_orientation .mobile_readmore, .mobile_campus .mobile_readmore, .mobile_lecturer .mobile_readmore{
+        padding-left: 16px;
+        padding-bottom: 32px;
+        font-size: 12px;
+    }
+
+/* START LEARNING SECTION FOR MOBILE */
+    .mobile_learning{
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .mobile_learning h2{
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    .mobile_learning button{
+        text-align: center;
+        width: 90%;
+        padding: 16px 16px 24px 16px;
+        background-color: #c0c0c0;
+        margin-bottom: 8px;
+        border: #a0a0a0;
+        color: #606060;
+    }
+
+/* THESIS SECTION FOR MOBILE */
+    .mobile_thesis{
+        text-align: center;
+        padding-bottom: 16px;
+        background-color: #f8f8f8;
+    }
+
+    .mobile_thesis video{
+        padding-bottom: 24px;
+    }
+
+/* FOOTER SECTION FOR MOBILE */
+    footer p{
+        background-color: #f8f8f8;
+        padding: 16px;
+        font-size: 12px;
+    }
+
+}
